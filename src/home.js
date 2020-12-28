@@ -1,4 +1,5 @@
 import logoImage from './logo-image';
+import phoneImag from './phone-image';
 import './styles/style.scss';
 
 const homePage = () => {
@@ -20,12 +21,9 @@ const homePage = () => {
   infoDivPhone.classList.add('info');
   infoDivPhone.id = 'phone';
 
-  const phoneIcon = document.createElement('img');
-  phoneIcon.id = 'phoneIcon';
-  phoneIcon.src = '/dist/assets/images/phone.png';
 
   const infoDivPhoneText = document.createTextNode('01800-857865');
-  infoDivPhone.appendChild(phoneIcon);
+  infoDivPhone.appendChild(phoneImag());
   infoDivPhone.appendChild(infoDivPhoneText);
 
 
