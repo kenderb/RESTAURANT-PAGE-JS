@@ -1,3 +1,5 @@
+import logoImage from './logo-image';
+
 const homePage = () => {
   const container = document.getElementById('container');
 
@@ -24,12 +26,6 @@ const homePage = () => {
   const infoDivPhoneText = document.createTextNode('01800-857865');
   infoDivPhone.appendChild(phoneIcon);
   infoDivPhone.appendChild(infoDivPhoneText);
-
-
-  const logoImg = document.createElement('img');
-  logoImg.src = '/dist/assets/images/logo.png';
-  logoImg.alt = 'logo';
-  logoImg.id = 'logo';
 
 
   const menuSpan = document.createElement('span');
@@ -105,7 +101,7 @@ const homePage = () => {
   header.appendChild(infoDivPhone);
 
 
-  logoDiv.appendChild(logoImg);
+  logoDiv.appendChild(logoImage());
 
   navBar.appendChild(menuSpan);
   navBar.appendChild(historySpan);
@@ -118,10 +114,6 @@ const homePage = () => {
 
   container.appendChild(header);
   container.appendChild(sectionContent);
-
-  logoImg.onclick = () => {
-    window.location.reload();
-  };
 
 
   function outPut() {

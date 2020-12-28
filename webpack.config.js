@@ -7,4 +7,14 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   mode: 'development',
+  module: {
+    rules: [
+      {
+        test: /\.(png|jpg)$/,
+        use: [
+          'file-loader',
+        ],
+      },
+    ],
+  },
 };
