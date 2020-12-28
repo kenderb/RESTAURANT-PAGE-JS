@@ -1,4 +1,5 @@
 import logoImage from './logo-image';
+import './styles/style.scss';
 
 const homePage = () => {
   const container = document.getElementById('container');
@@ -115,13 +116,7 @@ const homePage = () => {
   container.appendChild(header);
   container.appendChild(sectionContent);
 
-
-  function outPut() {
-    return container;
-  }
-  return {
-    outPut,
-  };
+  return container;
 };
 
 export default homePage;
