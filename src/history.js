@@ -1,7 +1,7 @@
 import historyImageUrl from './images/pexels-snapwire-245535.jpg';
 
 const historyContent = () => {
-  const container = document.querySelector('.container');
+  const container = document.getElementById('container');
   const div = document.createElement('div');
   const articule = document.createElement('article');
   div.classList.add('contentInfo');
