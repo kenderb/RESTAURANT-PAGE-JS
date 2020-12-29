@@ -3,7 +3,7 @@ import BackgorundImage from './images/Backgorund4.jpg';
 
 const navButton = () => {
   const menu = document.querySelectorAll('.menu');
-  function onclickAction(item, position, bg) {
+  const onclickAction = (item, position, bg) => {
     item.onclick = () => {
       const content = document.querySelectorAll('.contentInfo');
       content[position].style.display = 'grid';
@@ -22,7 +22,7 @@ const navButton = () => {
         }
       }
     };
-  }
+  };
 
   onclickAction(menu[0], 1, BackgorundImage);
   onclickAction(menu[1], 2, BackgorundImage);

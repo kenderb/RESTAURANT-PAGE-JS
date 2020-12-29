@@ -7,12 +7,12 @@ const menuContent = () => {
   const menuContent = document.createElement('div');
   menuContent.classList.add('contentInfo');
   menuContent.classList.add('foodMenu');
-  function createImage(rute) {
+  const createImage = (rute) => {
     const image = document.createElement('img');
     image.src = rute;
     image.classList.add('menuImage');
     menuContent.appendChild(image);
-  }
+  };
   createImage(foot1);
   createImage(foot2);
   createImage(foot3);

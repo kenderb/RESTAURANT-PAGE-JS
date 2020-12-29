@@ -1,6 +1,6 @@
 import Logo from './images/logo.png';
 
-function logoImage() {
+const logoImage = () => {
   const logoImg = document.createElement('img');
   logoImg.src = Logo;
   logoImg.alt = 'logo';
@@ -9,5 +9,5 @@ function logoImage() {
     window.location.reload();
   };
   return logoImg;
-}
+};
 export default logoImage;
