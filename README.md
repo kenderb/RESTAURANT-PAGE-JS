@@ -1,6 +1,6 @@
 # Restaurant Landing page
 
-> I base this Project on the practice for DOM manipulation with JavaScript and Webpack. This project is A landing page for a restaurant where you can visit and see the menu that is available on the restaurant, also you can see a map where the restaurant is located.
+> I base this project on the practice for DOM manipulation with JavaScript and Webpack. This project is A landing page for a restaurant where you can visit and see the menu that is available on the restaurant, also you can see a map where the restaurant is located.
 
 ## Built With
 
